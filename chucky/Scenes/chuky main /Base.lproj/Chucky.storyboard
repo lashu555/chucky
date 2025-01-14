@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chucky View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChuckyViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WsN-zl-q7c">
+                                <rect key="frame" x="160" y="775" width="73" height="26"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="didScrollPage:" destination="BYZ-38-t0r" eventType="valueChanged" id="i0F-Az-QzZ"/>
+                                </connections>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRW-V2-VlT">
+                                <rect key="frame" x="79" y="683" width="235" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ozg-tQ-MI0"/>
+                                    <constraint firstAttribute="width" constant="235" id="pTC-2X-vtd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Fun Fact">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                    <color key="baseBackgroundColor" name="ButtonColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapFunFactButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1td-rA-Avp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8I-YW-PEb">
+                                <rect key="frame" x="161.66666666666666" y="109" width="70" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="31"/>
+                                <color key="textColor" name="TitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kG5-AR-dbW">
+                                <rect key="frame" x="36" y="306" width="321" height="113.66666666666669"/>
+                                <string key="text">Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="kG5-AR-dbW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7l5-he-jrz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kG5-AR-dbW" secondAttribute="trailing" constant="36" id="A63-L3-aqv"/>
+                            <constraint firstItem="kG5-AR-dbW" firstAttribute="top" secondItem="R8I-YW-PEb" secondAttribute="bottom" constant="160" id="FsW-3D-HUZ"/>
+                            <constraint firstItem="WsN-zl-q7c" firstAttribute="top" secondItem="PRW-V2-VlT" secondAttribute="bottom" constant="40" id="G96-Vf-caR"/>
+                            <constraint firstItem="PRW-V2-VlT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H46-DA-1qU"/>
+                            <constraint firstItem="R8I-YW-PEb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="KHq-vv-PmD"/>
+                            <constraint firstItem="kG5-AR-dbW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="KYE-o3-0EY"/>
+                            <constraint firstItem="R8I-YW-PEb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L7H-cM-NsJ"/>
+                            <constraint firstItem="WsN-zl-q7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vsm-Im-hDP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WsN-zl-q7c" secondAttribute="bottom" constant="17" id="s6k-Gg-d7U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryTitleLabel" destination="R8I-YW-PEb" id="xRW-TZ-sHn"/>
+                        <outlet property="jokeLabel" destination="kG5-AR-dbW" id="n1C-rm-TrX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.17254901960784313" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonColor">
+            <color red="1" green="0.63137254901960782" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="1" green="0.98431372549019602" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleColor">
+            <color red="1" green="0.54509803921568623" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
