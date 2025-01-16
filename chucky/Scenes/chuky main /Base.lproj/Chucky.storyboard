@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XVl-lN-9g0">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -8,27 +8,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chucky View Controller-->
+        <!--Celebrity View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ChuckyViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CelebrityID" id="BYZ-38-t0r" customClass="CelebrityViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WsN-zl-q7c">
-                                <rect key="frame" x="160" y="775" width="73" height="26"/>
-                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="didScrollPage:" destination="BYZ-38-t0r" eventType="valueChanged" id="i0F-Az-QzZ"/>
-                                </connections>
-                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRW-V2-VlT">
                                 <rect key="frame" x="79" y="683" width="235" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="ozg-tQ-MI0"/>
-                                    <constraint firstAttribute="width" constant="235" id="pTC-2X-vtd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="pTC-2X-vtd"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Fun Fact">
@@ -60,13 +52,11 @@
                             <constraint firstItem="kG5-AR-dbW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7l5-he-jrz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kG5-AR-dbW" secondAttribute="trailing" constant="36" id="A63-L3-aqv"/>
                             <constraint firstItem="kG5-AR-dbW" firstAttribute="top" secondItem="R8I-YW-PEb" secondAttribute="bottom" constant="160" id="FsW-3D-HUZ"/>
-                            <constraint firstItem="WsN-zl-q7c" firstAttribute="top" secondItem="PRW-V2-VlT" secondAttribute="bottom" constant="40" id="G96-Vf-caR"/>
                             <constraint firstItem="PRW-V2-VlT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H46-DA-1qU"/>
                             <constraint firstItem="R8I-YW-PEb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="KHq-vv-PmD"/>
                             <constraint firstItem="kG5-AR-dbW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="KYE-o3-0EY"/>
                             <constraint firstItem="R8I-YW-PEb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L7H-cM-NsJ"/>
-                            <constraint firstItem="WsN-zl-q7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vsm-Im-hDP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WsN-zl-q7c" secondAttribute="bottom" constant="17" id="s6k-Gg-d7U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PRW-V2-VlT" secondAttribute="bottom" constant="83" id="O2J-ey-Bnd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -76,7 +66,135 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="53" y="-11"/>
+        </scene>
+        <!--Root Page View Controller-->
+        <scene sceneID="dBw-Aw-Jt8">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="XVl-lN-9g0" customClass="RootPageViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rm5-xW-LxJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="-322"/>
+        </scene>
+        <!--Dev View Controller-->
+        <scene sceneID="wK8-w2-Mgc">
+            <objects>
+                <viewController storyboardIdentifier="DevID" id="YwX-jT-Fmg" customClass="DevViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBB-WP-eVb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wS7-Ot-Fqf">
+                                <rect key="frame" x="79" y="683" width="235" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="8pf-MK-TLw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="9V4-Kh-1xX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Fun Fact">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                    <color key="baseBackgroundColor" name="ButtonColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapFunFactButton:" destination="YwX-jT-Fmg" eventType="touchUpInside" id="sAG-aG-5zr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ph-Cl-akb">
+                                <rect key="frame" x="161.66666666666666" y="109" width="70" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="31"/>
+                                <color key="textColor" name="TitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-AP-rbG">
+                                <rect key="frame" x="36" y="306" width="321" height="113.66666666666669"/>
+                                <string key="text">Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cpa-yT-yWC"/>
+                        <color key="backgroundColor" red="0.5" green="0.17254901960784313" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Ph-Cl-akb" firstAttribute="top" secondItem="cpa-yT-yWC" secondAttribute="top" constant="50" id="0fI-Nr-IaK"/>
+                            <constraint firstItem="cAD-AP-rbG" firstAttribute="leading" secondItem="cpa-yT-yWC" secondAttribute="leading" constant="36" id="FPe-KC-2Dx"/>
+                            <constraint firstItem="wS7-Ot-Fqf" firstAttribute="centerX" secondItem="xBB-WP-eVb" secondAttribute="centerX" id="Ujm-6e-4zH"/>
+                            <constraint firstItem="4Ph-Cl-akb" firstAttribute="centerX" secondItem="xBB-WP-eVb" secondAttribute="centerX" id="ZlC-tS-7jG"/>
+                            <constraint firstItem="cpa-yT-yWC" firstAttribute="bottom" secondItem="wS7-Ot-Fqf" secondAttribute="bottom" constant="83" id="cPC-e1-Naz"/>
+                            <constraint firstItem="cpa-yT-yWC" firstAttribute="trailing" secondItem="cAD-AP-rbG" secondAttribute="trailing" constant="36" id="mam-gp-VUx"/>
+                            <constraint firstItem="cAD-AP-rbG" firstAttribute="centerX" secondItem="xBB-WP-eVb" secondAttribute="centerX" id="y77-rx-lze"/>
+                            <constraint firstItem="cAD-AP-rbG" firstAttribute="top" secondItem="4Ph-Cl-akb" secondAttribute="bottom" constant="160" id="yCR-3p-Cw9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryTitleLabel" destination="4Ph-Cl-akb" id="fwc-ul-grs"/>
+                        <outlet property="jokeLabel" destination="cAD-AP-rbG" id="Q7r-nS-pmX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBs-a6-5q6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="-720"/>
+        </scene>
+        <!--Music View Controller-->
+        <scene sceneID="DNR-QY-Dci">
+            <objects>
+                <viewController storyboardIdentifier="MusicID" id="Rui-mP-Xtc" customClass="MusicViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qhv-Tg-okJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIj-AJ-JDD">
+                                <rect key="frame" x="79" y="683" width="235" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="3sM-rP-chH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="pPB-U4-XN2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Fun Fact">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                    <color key="baseBackgroundColor" name="ButtonColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapFunFactButton:" destination="Rui-mP-Xtc" eventType="touchUpInside" id="u7G-0i-zJf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBX-iV-olX">
+                                <rect key="frame" x="161.66666666666666" y="109" width="70" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="31"/>
+                                <color key="textColor" name="TitleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02T-SJ-GDV">
+                                <rect key="frame" x="36" y="306" width="321" height="113.66666666666669"/>
+                                <string key="text">Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iCk-mF-mzU"/>
+                        <color key="backgroundColor" red="0.0" green="0.17254901960784313" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iCk-mF-mzU" firstAttribute="trailing" secondItem="02T-SJ-GDV" secondAttribute="trailing" constant="36" id="33I-Kb-j8K"/>
+                            <constraint firstItem="IBX-iV-olX" firstAttribute="top" secondItem="iCk-mF-mzU" secondAttribute="top" constant="50" id="4MW-wV-Qlr"/>
+                            <constraint firstItem="02T-SJ-GDV" firstAttribute="centerX" secondItem="qhv-Tg-okJ" secondAttribute="centerX" id="Qcn-B4-cAo"/>
+                            <constraint firstItem="02T-SJ-GDV" firstAttribute="top" secondItem="IBX-iV-olX" secondAttribute="bottom" constant="160" id="YYg-iA-YXP"/>
+                            <constraint firstItem="QIj-AJ-JDD" firstAttribute="centerX" secondItem="qhv-Tg-okJ" secondAttribute="centerX" id="aqR-5s-pVk"/>
+                            <constraint firstItem="02T-SJ-GDV" firstAttribute="leading" secondItem="iCk-mF-mzU" secondAttribute="leading" constant="36" id="baC-tx-OMS"/>
+                            <constraint firstItem="iCk-mF-mzU" firstAttribute="bottom" secondItem="QIj-AJ-JDD" secondAttribute="bottom" constant="83" id="hht-JO-Eou"/>
+                            <constraint firstItem="IBX-iV-olX" firstAttribute="centerX" secondItem="qhv-Tg-okJ" secondAttribute="centerX" id="i48-t3-a3P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryTitleLabel" destination="IBX-iV-olX" id="cHd-6c-Tgk"/>
+                        <outlet property="jokeLabel" destination="02T-SJ-GDV" id="jfH-D0-3FC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YPK-BE-uLA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-706" y="-380"/>
         </scene>
     </scenes>
     <resources>
