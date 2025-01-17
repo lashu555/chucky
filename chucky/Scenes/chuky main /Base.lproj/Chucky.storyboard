@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XVl-lN-9g0">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="CelebrityID" id="BYZ-38-t0r" customClass="CelebrityViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRW-V2-VlT">
-                                <rect key="frame" x="79" y="683" width="235" height="52"/>
+                                <rect key="frame" x="83.666666666666686" y="705" width="235" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="ozg-tQ-MI0"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="pTC-2X-vtd"/>
@@ -33,13 +33,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8I-YW-PEb">
-                                <rect key="frame" x="161.66666666666666" y="109" width="70" height="37"/>
+                                <rect key="frame" x="166" y="112" width="70" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="31"/>
                                 <color key="textColor" name="TitleColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kG5-AR-dbW">
-                                <rect key="frame" x="36" y="306" width="321" height="113.66666666666669"/>
+                                <rect key="frame" x="36" y="309" width="330" height="113.66666666666669"/>
                                 <string key="text">Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <color key="textColor" name="TextColor"/>
@@ -74,18 +74,18 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="XVl-lN-9g0" customClass="RootPageViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rm5-xW-LxJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824" y="-322"/>
+            <point key="canvasLocation" x="831" y="-380"/>
         </scene>
         <!--Dev View Controller-->
         <scene sceneID="wK8-w2-Mgc">
             <objects>
                 <viewController storyboardIdentifier="DevID" id="YwX-jT-Fmg" customClass="DevViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xBB-WP-eVb">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wS7-Ot-Fqf">
-                                <rect key="frame" x="79" y="683" width="235" height="52"/>
+                                <rect key="frame" x="83.666666666666686" y="705" width="235" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="8pf-MK-TLw"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="9V4-Kh-1xX"/>
@@ -93,24 +93,24 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Fun Fact">
                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
-                                    <color key="baseForegroundColor" name="AccentColor"/>
-                                    <color key="baseBackgroundColor" name="ButtonColor"/>
+                                    <color key="baseForegroundColor" red="0.5" green="0.17254901959999999" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.48804209183673469" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapFunFactButton:" destination="YwX-jT-Fmg" eventType="touchUpInside" id="sAG-aG-5zr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ph-Cl-akb">
-                                <rect key="frame" x="161.66666666666666" y="109" width="70" height="37"/>
+                                <rect key="frame" x="166" y="112" width="70" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="31"/>
-                                <color key="textColor" name="TitleColor"/>
+                                <color key="textColor" red="0.94207057823129248" green="0.75151466836734682" blue="0.50855654761904767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-AP-rbG">
-                                <rect key="frame" x="36" y="306" width="321" height="113.66666666666669"/>
+                                <rect key="frame" x="36" y="309" width="330" height="113.66666666666669"/>
                                 <string key="text">Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" name="TextColor"/>
+                                <color key="textColor" red="0.99072597789115646" green="0.98431372549019602" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -141,11 +141,11 @@
             <objects>
                 <viewController storyboardIdentifier="MusicID" id="Rui-mP-Xtc" customClass="MusicViewController" customModule="chucky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qhv-Tg-okJ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIj-AJ-JDD">
-                                <rect key="frame" x="79" y="683" width="235" height="52"/>
+                                <rect key="frame" x="83.666666666666686" y="705" width="235" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="3sM-rP-chH"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="pPB-U4-XN2"/>
@@ -153,24 +153,24 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Fun Fact">
                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="24"/>
-                                    <color key="baseForegroundColor" name="AccentColor"/>
-                                    <color key="baseBackgroundColor" name="ButtonColor"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.17254901959999999" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.0" green="0.63137254901960782" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapFunFactButton:" destination="Rui-mP-Xtc" eventType="touchUpInside" id="u7G-0i-zJf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBX-iV-olX">
-                                <rect key="frame" x="161.66666666666666" y="109" width="70" height="37"/>
+                                <rect key="frame" x="166" y="112" width="70" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="31"/>
-                                <color key="textColor" name="TitleColor"/>
+                                <color key="textColor" red="0.5" green="0.5" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02T-SJ-GDV">
-                                <rect key="frame" x="36" y="306" width="321" height="113.66666666666669"/>
+                                <rect key="frame" x="36" y="309" width="330" height="113.66666666666669"/>
                                 <string key="text">Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke Joke</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                <color key="textColor" name="TextColor"/>
+                                <color key="textColor" red="0.97961840986394555" green="0.98431372549019602" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

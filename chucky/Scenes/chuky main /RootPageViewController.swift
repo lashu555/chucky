@@ -32,7 +32,9 @@ class RootPageViewController: UIPageViewController {
         super.viewDidLoad()
         self.dataSource = self
         self.delegate = self
-        
+        let pageControl = UIPageControl.appearance()
+        pageControl.currentPageIndicatorTintColor = .black
+        pageControl.pageIndicatorTintColor = .white
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
